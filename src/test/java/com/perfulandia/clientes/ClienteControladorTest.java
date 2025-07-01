@@ -51,6 +51,6 @@ public class ClienteControladorTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("_embedded.clientesDTOList[0].nombreCompleto").value("Ana"))
                 .andExpect(jsonPath("_embedded.clientesDTOList[1].nombreCompleto").value("Luis"))
-                .andExpect(jsonPath("_links.self.href").exists());
+                .andExpect(jsonPath("_links.self.href").exists()); 
     }
 }
